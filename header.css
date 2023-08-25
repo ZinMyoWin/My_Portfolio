@@ -29,20 +29,24 @@
   }
 
   .nav-logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
       flex: 1;
       /* Take available space */
       display: flex;
       width: 30%;
       justify-content: center;
+      color: rgb(131, 32, 32);
+
   }
 
   .nav-logo a {
-      color: rgb(51, 73, 84);
+      color: rgb(131, 32, 32);
       text-decoration: none;
   }
 
   .nav-contents {
+  
       list-style: none;
       padding: 0;
       margin: 0;
@@ -55,11 +59,14 @@
   }
 
   .navbar-items {
+    
       padding: 0 20px;
   }
 
   .navbar-items a {
-      color: rgb(51, 73, 84);
+    color: rgb(131, 32, 32);
+    
+    font-weight: 600;
       text-decoration: none;
   }
 
