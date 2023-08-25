@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="landing.css">
+    
+    
 </head>
 <body>
     <nav class="nav-container">
@@ -29,10 +32,16 @@
     <section class="section1" id="home">
         <div class="first-content">
             <div class="intro-text">
-                <h1>I'm Zin Myo Win</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <h1>
+                    <a href="#" class="typewrite" data-period="2000" data-type='[ "Hi, I am Zin Myo Win.", "I am a Junior Developer.", "I Love Designing.", "I Love to Develop." ]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h1>
+                
+                <h3>
+                    A junior developer on a mission to turn concepts into captivating digital realities. With a blend of coding.
                 </h3>
-                <button>
+                <button class="downloadcv-button">
                     <span>
                         Download CV
                     </span>
@@ -45,19 +54,30 @@
             </div>
         </div>
     </section> 
+
+    <hr style="width: 80%; text-align: center;">
     <section class="section2" id="project">
-        <div class="project-title"><h1>Project</h1></div>
+        <div class="project-title"><h1>Project</h1></span></div>
         <div class="second-content">
-            <div class="project1-image">
-                <img src="img/22.jpg" alt="myImage">
+
+            <div class="project1">
+                <div class="project1-image">
+                    <img src="img/my-img.jpg" alt="p1-img">
+                </div>
+                <div class="live-demo-btn">
+                    <a href="#"><button>Live Demo</button></a>
+                </div>
             </div>
+
             <div class="project1-intro-text">
                 <h1>Project 1 Title</h1>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                 </h3>
             </div>
         </div>
-    </section>
+    </section> 
+  
 <script src="header.js"></script>
+ 
 </body>
 </html>
