@@ -5,7 +5,7 @@ html {
 
 /*---------------------Section 1----------------------*/
 .section1 {
-    height: 700px;
+    height: 100%;
     background-color: rgb(255, 247, 236);
     color: rgb(152, 11, 11);
 }
@@ -97,7 +97,7 @@ html {
 /*------------------------------Section 2----------------------------------*/
 
 .section2 {
-    height: 700px;
+    height: 100%;
     color: rgb(131, 32, 32);
 }
 
@@ -260,3 +260,65 @@ html {
   .project2-card:hover{
     transform: translateY(-10px);
   }
+
+  /*-------------------------------------------Section3 Start---------------------------------*/
+  .section3 {
+    height: 100%;
+  
+  }
+  
+  .about {
+    padding-top: 5%;
+    
+
+  }
+
+  .about h1{
+    padding-bottom: 5%;
+    color: rgb(131, 32, 32);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* ---------------------------------Style tab links---------------------- */
+  .tab-width{
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .tablink {
+  background-color:  rgb(255, 247, 236);
+  color: rgb(131, 32, 32);
+  border: 5px solid rgb(131, 32, 32);
+  outline: none;
+  float: left;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color:rgb(131, 32, 32);
+  color:  rgb(255, 247, 236);
+  border:  5px solid rgb(255, 247, 236);
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#education {
+  background-color:rgb(131, 32, 32);
+}
+#skills {
+  background-color: rgb(131, 32, 32);
+}
+
