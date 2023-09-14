@@ -113,24 +113,53 @@
     </div>
   </section>
   <hr style="width: 80%; text-align: center;">
-  <section class="section3">
+  <section class="section3" id="about">
     <div class="about">
-      <h1>About</h1>
+      <h1 class="about-title">About</h1>
       <div class="tab-width">
         <button class="tablink"
-          onclick="openPage('education', this, 'rgb(131, 32, 32)','rgb(255, 247, 236)','rgb(255, 247, 236)')" id="defaultOpen">Education</button>
+          onclick="openPage('education', this, 'rgb(131, 32, 32)','rgb(255, 247, 236)','rgb(255, 247, 236)')"
+          id="defaultOpen">Education</button>
         <button class="tablink"
-          onclick="openPage('skills', this, 'rgb(131, 32, 32)','rgb(255, 247, 236)','rgb(255, 247, 236)')">Professional Skills</button>
+          onclick="openPage('skills', this, 'rgb(131, 32, 32)','rgb(255, 247, 236)','rgb(255, 247, 236)')">Professional
+          Skills</button>
 
 
         <div id="education" class="tabcontent">
-          <h3>Education</h3>
-          <p>More Information be inserted here.</p>
+          <div class="edu-title">
+            <h1 >Education</h1>
+          </div>
+          <div class="education-cards">
+
+            <div class="edu-card card1">
+              <div class="school-name">Lithan Educlaas</div>
+              <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
+              <div class="graduation-year">Expected Graduation: 20XX</div>
+            </div>
+
+            <div class="edu-card card1">
+              <div class="school-name">Lithan Educlaas</div>
+              <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
+              <div class="graduation-year">Expected Graduation: 20XX</div>
+            </div>
+
+            <div class="edu-card card1">
+              <div class="school-name">Lithan Educlaas</div>
+              <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
+              <div class="graduation-year">Expected Graduation: 20XX</div>
+            </div>
+
+          </div>
         </div>
 
         <div id="skills" class="tabcontent">
           <h3>Professional Skills</h3>
-          <p>Html, Css, Tailwind Css, Bootstrap, JavaScript, Java, Spring, Spring Boot, jQuery, API Intergration, React Js, MUI</p>
+          <div class="all-progressbar-container">
+            
+          </div>
+          
+          <p>Html, Css, Tailwind Css, Bootstrap, JavaScript, Java, Spring, Spring Boot, jQuery, API Intergration, React
+            Js, MUI</p>
         </div>
       </div>
     </div>
@@ -139,4 +168,5 @@
   <script src="header.js"></script>
 
 </body>
+
 </html>
