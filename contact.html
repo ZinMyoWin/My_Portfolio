@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* Custom CSS */
+        .contact-container {
+            max-width: 1200px;
+
+            margin: 7rem auto;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: nowrap;
+            /* Ensure content doesn't wrap */
+        }
+
+        .contact-col {
+            flex: 1;
+            min-width: 50%;
+            padding: 2rem;
+        }
+
+        .contact-col img.contact-connect {
+            margin-top: 5rem;
+            width: 100%;
+        }
+
+        .intro-section {
+            background-color: #832020;
+            color: #fff7ec;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+            font-size: 20px;
+        }
+
+        .input-field {
+            width: 80%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #832020;
+            border-radius: 0.25rem;
+        }
+
+        .submit-btn {
+            padding: 0.5rem 1rem;
+            background-color: #832020;
+            color: #fff;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #bb0a42;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .flex-row {
+                flex-wrap: wrap;
+            }
+
+            .contact-col {
+                min-width: 80%;
+            }
+        }
+    </style>
+    <script src="contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("k6DvQsZZX_lxlcnBS");
+        })();
+    </script>
+</head>
+
+<body style="background-color:#fff7ec;">
+    <div class="contact-container">
+
+        <nav class="nav-container">
+            <div class="nav-logo"><a href="#"><img src="img/Logo.jpg" alt=""></a></div>
+            <ul class="nav-contents">
+                <li class="navbar-items"><a class="navbar-links" href="index.html#home">Home</a></li>
+                <li class="navbar-items"><a class="navbar-links" href="index.html#about">About</a></li>
+                <li class="navbar-items"><a class="navbar-links" href="index.html#project">Project</a></li>
+                <li class="navbar-items"><a class="navbar-links" href="#">Contact</a></li>
+            </ul>
+            <div class="hire-me-button">
+                <a href="#">Hire Me</a>
+            </div>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div class="flex-row">
+            <div class="contact-col intro-section">
+                <h1>Welcome to My Portfolio!</h1>
+                <h4>
+                    Thank you for taking the time to explore my work. If you have any inquiries, project opportunities,
+                    or would like to collaborate, please don't hesitate to reach out using the contact form. I look
+                    forward to connecting with you!
+                </h4>
+                <img class="contact-connect" src="img/connect.jpg" alt="contact-connect">
+            </div>
+            <div class="contact-col">
+                <h1>Contact form</h1>
+                <div class="input-group">
+                    <h5 for="name">Name</h5>
+                    <input type="text" class="input-field" id="name" placeholder="Enter name" />
+                </div>
+                <div class="input-group">
+                    <h5 for="email">Email</h5>
+                    <input type="email" class="input-field" id="email" placeholder="Enter email" />
+                </div>
+                <div class="input-group">
+                    <h5 for="message">Message</h5>
+                    <textarea class="input-field" id="message" rows="3"></textarea>
+                </div>
+                <button class="submit-btn" onclick="sendMail()">Submit</button>
+
+                <div class="cotact-information" style="font-size: 20px;">
+                <h5 >Contact information:</h5>
+                <h5 style="font-size: 15px;">Email: mgzinmyowin12@gmail.com</h2>
+                <h5 style="font-size: 15px;">Phone: +959 793102694</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--Footer-->
+<footer>
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <img src="img/Logo.jpg" alt="">
+
+            </div>
+            <div class="nav-list-footer">
+                <ul style="display: flex; gap: 30px;list-style: none; ">
+                    <li><a href="" style="color: antiquewhite; text-decoration: none;">About</a></li>
+                    <li><a href="" style="color: antiquewhite; text-decoration: none;">Project</a></li>
+                    <li><a href="" style="color: antiquewhite; text-decoration: none;">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/login.php"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

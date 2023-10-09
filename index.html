@@ -6,23 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="footer.css">
 
 
 </head>
 
 <body>
   <nav class="nav-container">
-    <div class="nav-logo"><a href="#">Zin Myo Win</a></div>
+    <div class="nav-logo"><a href="#home"><img src="img/Logo.jpg" alt=""></a></div>
     <ul class="nav-contents">
       <li class="navbar-items"><a class="navbar-links" href="#home">Home</a></li>
       <li class="navbar-items"><a class="navbar-links" href="#about">About</a></li>
       <li class="navbar-items"><a class="navbar-links" href="#project">Project</a></li>
-      <li class="navbar-items"><a class="navbar-links" href="#">Contact</a></li>
+      <li class="navbar-items"><a class="navbar-links" href="contact.html">Contact</a></li>
     </ul>
     <div class="hire-me-button">
-      <a href="#">Hire Me</a>
+      <a href="contact.html">Hire Me</a>
     </div>
     <div class="hamburger-menu">
       <span class="bar"></span>
@@ -32,7 +34,8 @@
   </nav>
 
   <section class="section1" id="home">
-    <div class="first-content">
+   
+    <div class="my-first-content">
       <div class="intro-text">
         <h1>
           <a href="#" class="typewrite" data-period="2000"
@@ -44,11 +47,13 @@
         <h3>
           A junior developer on a mission to turn concepts into captivating digital realities. With a blend of coding.
         </h3>
-        <button class="downloadcv-button">
-          <span>
-            Download CV
-          </span>
-        </button>
+        <a href="Resume/Resume Template.docx" download>
+          <button class="downloadcv-button">
+            <span>
+              Download CV
+            </span>
+          </button>
+        </a>
       </div>
       <div class="my-image">
 
@@ -63,27 +68,25 @@
     <div class="project-title">
       <h1>Project</h1><span style="color:rgb(0, 0, 0) ;font-size: 2rem;font-weight: 600;">s</span>
     </div>
-    <div class="first-content">
+    <div class="sec2-first-content">
 
       <div class="project1-card">
-        <img class="project1-card-image" src="img/my-img.jpg" alt="Card Image">
+        <img class="project1-card-image" src="img/know-you-neighborhood.gif" alt="Card Image">
         <div class="project1-card-content">
           <button class="demo-button">
             Live Demo
             <i class="fa fa-play-circle" aria-hidden="true"></i>
           </button>
           <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <li>Spring Boot</li>
+            <li>React Js</li>
           </ul>
         </div>
       </div>
 
       <div class="project1-intro-text">
-        <h1>Project 1 Title</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam
+        <h1>Know Your Neighborhood </h1>
+        <h3 >The Know-Your-Neighbourhood (KYN) application aims to enhance user experience by integrating various social login APIs, allowing seamless access using existing social media credentials.
         </h3>
       </div>
     </div>
@@ -97,7 +100,7 @@
         </h3>
       </div>
       <div class="project2-card">
-        <img class="project1-card-image" src="img/my-img.jpg" alt="Card Image">
+        <img class="project1-card-image" src="img/know-you-neighborhood.gif" alt="Card Image">
         <div class="project1-card-content">
           <button class="demo-button">
             Live Demo
@@ -132,20 +135,26 @@
           <div class="education-cards">
 
             <div class="edu-card card1">
+              <img src="img/PearsonLevel3.png" alt="School Logo" width="175" height="100"/>
               <div class="school-name">Lithan Educlaas</div>
-              <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
-              <div class="graduation-year">Expected Graduation: 20XX</div>
+              <div class="degree">Pearson BTEC International Level 3 in Business</div>
+              <div class="degree-type">Foundation</div>
+              <div class="graduation-year">Graduation Year : 2022</div>
             </div>
 
             <div class="edu-card card1">
+              <img src="img/PearsonLevel3.png" alt="School Logo" width="175" height="100"/>
               <div class="school-name">Lithan Educlaas</div>
               <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
-              <div class="graduation-year">Expected Graduation: 20XX</div>
+              <div class="degree-type">Diploma</div>
+              <div class="graduation-year">Expected Graduation: 2024</div>
             </div>
 
             <div class="edu-card card1">
+              <img src="img/Top-Up Degree.png" alt="School Logo" width="175" height="100"/>
               <div class="school-name">Lithan Educlaas</div>
-              <div class="degree">Pearson Level 5 HND Diploma in Computing</div>
+              <div class="degree">BSc. in Computer Science(Honours)</div>
+              <div class="degree-type">Top-up Bachelor's Degree</div>
               <div class="graduation-year">Expected Graduation: 20XX</div>
             </div>
 
@@ -153,17 +162,92 @@
         </div>
 
         <div id="skills" class="tabcontent">
-          <h3>Professional Skills</h3>
-          <div class="all-progressbar-container">
-            
-          </div>
-          
+          <!-- <h3>Professional Skills</h3>
+                    
           <p>Html, Css, Tailwind Css, Bootstrap, JavaScript, Java, Spring, Spring Boot, jQuery, API Intergration, React
-            Js, MUI</p>
+            Js, MUI</p> -->
+
+             <section class="skills">
+                  <div class="skill">
+                    <img src="img/HTML.png" alt="HTML Icon">
+                      <p style="color: antiquewhite;">HTML</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/css.png" alt="css Icon">
+                      <p style="color: antiquewhite;">CSS</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/tailwind.png" alt="tailwind Icon">
+                      <p style="color: antiquewhite;">Tailwind CSS</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/Bootstrap_logopng.png" alt="Bootstrap Icon">
+                      <p>Bootstrap</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/javaScript.png" alt="JavaScript Icon">
+                      <p>JavaScript</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/java.png" alt="Java Icon">
+                      <p>Java</p>
+                  </div>
+                  <div class="skill">
+                      <img src="img/spring.png" alt="Spring Icon">
+                      <p>Spring</p>
+                  </div>
+                  <div class="skill">
+                    <img src="img/spring-boot-logo.png" alt="spring-boot Icon">
+                      <p>Spring Boot</p>
+                  </div>
+                  <div class="skill">
+                      <img src="img/jQuery.png" alt="jQuery Icon">
+                      <p>jQuery</p>
+                  </div>
+                  <div class="skill">
+                      <img src="img/api-management.png" alt="API Icon">
+                      <p>API</p>
+                  </div>
+                  <div class="skill">
+                      <img src="img/react.png" alt="React Icon">
+                      <p>React JS</p>
+                  </div>
+                  <div class="skill">
+                      <img src="img/marterial_ul.png" alt="MUI Icon">
+                      <p>MUI</p>
+                  </div>
+              </section>
         </div>
       </div>
     </div>
   </section>
+  <span class="footer-top-line"></span>
+  <!--Footer-->
+  <footer>
+    <div class="content">
+      <div class="top">
+      <div class="logo-details">
+         <img src="img/Logo.jpg" alt="">
+       
+      </div>
+      <div class="nav-list-footer">
+        <ul style="display: flex; gap: 30px;list-style: none; ">
+          <li><a href="" style="color: antiquewhite; text-decoration: none;">About</a></li>
+          <li><a href="" style="color: antiquewhite; text-decoration: none;">Project</a></li>
+          <li><a href="" style="color: antiquewhite; text-decoration: none;">Contact</a></li>
+        
+        </ul>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/login.php"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+      </div>
+      </div>
+      </div>
+    </footer>
 
   <script src="header.js"></script>
 

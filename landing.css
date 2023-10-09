@@ -4,19 +4,45 @@ html {
 }
 
 /*---------------------Section 1----------------------*/
-.section1 {
-    height: 100%;
-    background-color: rgb(255, 247, 236);
+.section1{
+    height: 90vh;
     color: rgb(152, 11, 11);
+    position: relative;
+    margin-top: 70px !important;
 }
 
-.first-content {
-    margin-top: 70px;
+/* .section1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right:0;  
+  width: 50%;  
+  height: 100%;
+  background: #832020; /
+-webkit-clip-path: polygon(100% 19%, 100% 33%, 68% 61%, 61% 52%);
+clip-path: polygon(100% 19%, 100% 33%, 68% 61%, 61% 52%);
+  z-index: -1; 
+} */
+.section1::before{
+  content: "";
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 50%;  
+  height: 100%;
+  background-color: #832020;
+  -webkit-clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 74% 52%, 25% 0%);
+clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 74% 52%, 25% 0%);
+z-index: -1;
+}
+.my-first-content {
+  padding-top: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
 
 }
 
@@ -86,8 +112,8 @@ html {
 
 .my-image .img1 {
 
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     clip-path: circle(50% at 50% 50%);
 }
 
@@ -99,7 +125,21 @@ html {
 .section2 {
     height: 100%;
     color: rgb(131, 32, 32);
+    position: relative;
 }
+.section2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right:0; /* Adjusted to position on the right */
+  width: 50%; /* Adjust width as needed */
+  height: 100%;
+  background: #832020; /* Replace with your desired background color */
+  -webkit-clip-path: polygon(100% 0, 51% 55%, 100% 100%);
+clip-path: polygon(100% 0, 51% 55%, 100% 100%);
+  z-index: -1; /* This ensures the shape stays behind your content */
+}
+
 
 .project-title {
     margin-top: 7%;
@@ -114,7 +154,8 @@ html {
 }
 
 
-.first-content {
+
+.sec2-first-content {
     margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -130,6 +171,7 @@ html {
 
 .project1-intro-text h1 {
     color: rgb(24, 16, 16);
+    
 }
 
 .project1-intro-text h3 {
@@ -251,11 +293,14 @@ html {
     padding: 0;
   }
 
+  
+
   .skills-list li {
     margin-bottom: 5px;
     font-size: 12px;
     color: #888;
   }
+
 
   .project2-card:hover{
     transform: translateY(-10px);
@@ -264,7 +309,20 @@ html {
   /*-------------------------------------------Section3 Start---------------------------------*/
   .section3 {
     height: 100%;
+    position: relative;
   
+  }
+  .section3::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0; /* Adjusted to position on the right */
+  width: 50%; /* Adjust width as needed */
+  height: 100%;
+  background: #832020; /* Replace with your desired background color */
+  -webkit-clip-path: polygon(0 93%, 0 0, 81% 65%);
+clip-path: polygon(0 93%, 0 0, 81% 65%);
+  z-index: -1; /* This ensures the shape stays behind your content */
   }
   
   .about {
@@ -282,7 +340,7 @@ html {
   
   /* ---------------------------------Style tab links---------------------- */
   .tab-width{
-    width: 100%;
+    width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -309,32 +367,37 @@ html {
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   
-  color: white;
+  
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
 
-#education {
-  background-color:rgb(131, 32, 32);
+/* #education {
+  background-color:rgb(255, 247, 236);
 }
 #skills {
-  background-color: rgb(131, 32, 32);
-}
+  background-color: rgb(255, 247, 236);
+} */
 
 
 .education-cards {
   color: rgb(131, 32, 32);
   display: flex;
+  flex-wrap: wrap;
   width:100%;
-  flex-direction: row;
-  justify-content: space-around;
-  gap:100px;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  
+  /* gap:100px; */
 }
 
 .edu-card {
+  margin: 5%;
   background-color: rgb(255, 247, 236);
   padding: 20px;
+  width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -342,16 +405,62 @@ html {
 
 .school-name {
   font-size: 20px;
-  font-weight: bold;
+  font-weight:800;
   margin-bottom: 10px;
 }
 
 .degree {
   font-size: 16px;
+  font-weight:800;
   margin-bottom: 10px;
 }
 
 .graduation-year {
   font-size: 14px;
 }
+
+/*My Skills*/
+.skills {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill {
+  width: 100px;
+  text-align: center;
+}
+
+.skill img {
+  width: 68px;
+  height: 68px;
+}
+
+.skill p {
+  margin-top: 8px;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media (max-width:1024px) {
+
+}
+
+@media(max-width:768px) {
+    
+}
+
+@media (max-width:590px) {
+
+}
+
+@media(max-width:480px){
+  
+}
+
+
 
