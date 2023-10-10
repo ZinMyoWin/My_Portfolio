@@ -1,120 +1,108 @@
 html {
-    background-color: rgb(255, 247, 236);
-    scroll-behavior: smooth;
+  background-color: rgb(255, 247, 236);
+  scroll-behavior: smooth;
 }
 
 /*---------------------Section 1----------------------*/
-.section1{
-    height: 90vh;
-    color: rgb(152, 11, 11);
-    position: relative;
-    margin-top: 70px !important;
+.section1 {
+  height: 90vh;
+  color: rgb(152, 11, 11);
+  position: relative;
+  margin-top: 70px !important;
 }
 
-/* .section1::before{
+.section1::before {
   content: "";
   position: absolute;
   top: 0;
-  right:0;  
-  width: 50%;  
-  height: 100%;
-  background: #832020; /
--webkit-clip-path: polygon(100% 19%, 100% 33%, 68% 61%, 61% 52%);
-clip-path: polygon(100% 19%, 100% 33%, 68% 61%, 61% 52%);
-  z-index: -1; 
-} */
-.section1::before{
-  content: "";
-  position: absolute;
-  top:0;
   right: 0;
-  width: 50%;  
+  width: 50%;
   height: 100%;
   background-color: #832020;
   -webkit-clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 74% 52%, 25% 0%);
-clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 74% 52%, 25% 0%);
-z-index: -1;
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 74% 52%, 25% 0%);
 }
+
 .my-first-content {
   padding-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
 }
 
 .intro-text {
-    margin: 100px 10% 0 25%;
+  margin: 100px 10% 0 25%;
 }
 
 .intro-text h1 a {
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: rgb(24, 16, 16);
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: rgb(24, 16, 16);
 }
 
 
 .intro-text h3 {
-    width: 100%;
-    justify-content: center;
-    color: rgb(from color r g b);
+  width: 100%;
+  justify-content: center;
+  color: rgb(from color r g b);
 }
 
 .downloadcv-button {
-    padding: 0.1em 0.25em;
-    width: 13em;
-    height: 4.2em;
-    background-color: rgb(152, 11, 11);
-    border: 0.08em solid #fff;
-    border-radius: 0.3em;
-    font-size: 12px;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: rgb(152, 11, 11);
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
 }
 
 /*Button*/
 .downloadcv-button span {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0.4em;
-    width: 8.25em;
-    height: 2.5em;
-    background-color: rgb(152, 11, 11);
-    border-radius: 0.2em;
-    font-size: 1.5em;
-    color: #fff;
-    cursor: pointer;
-    border: 0.08em solid #fff;
-    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: rgb(152, 11, 11);
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
 }
 
 .downloadcv-button span:hover {
-    transition: all 0.5s;
-    transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
 }
 
 .downloadcv-button span:not(hover) {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 
 
 /* My image */
 .my-image {
-    /* margin: 50px 35% 0 10%; */
-    margin-top: 50px;
-    text-align: center;
+  /* margin: 50px 35% 0 10%; */
+  display: flex;
+  margin-top: 50px;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .my-image .img1 {
-
-    width: 400px;
-    height: 400px;
-    clip-path: circle(50% at 50% 50%);
+  width: 400px;
+  height: 400px;
+  clip-path: circle(50% at 50% 50%);
 }
 
 
@@ -123,230 +111,243 @@ z-index: -1;
 /*------------------------------Section 2----------------------------------*/
 
 .section2 {
-    height: 100%;
-    color: rgb(131, 32, 32);
-    position: relative;
+  height: 100%;
+  color: rgb(131, 32, 32);
+  position: relative;
 }
-.section2::before{
+
+.section2::before {
   content: "";
   position: absolute;
   top: 0;
-  right:0; /* Adjusted to position on the right */
-  width: 50%; /* Adjust width as needed */
+  right: 0;
+  /* Adjusted to position on the right */
+  width: 50%;
+  /* Adjust width as needed */
   height: 100%;
-  background: #832020; /* Replace with your desired background color */
+  background: #832020;
+  /* Replace with your desired background color */
   -webkit-clip-path: polygon(100% 0, 51% 55%, 100% 100%);
-clip-path: polygon(100% 0, 51% 55%, 100% 100%);
-  z-index: -1; /* This ensures the shape stays behind your content */
+  clip-path: polygon(100% 0, 51% 55%, 100% 100%);
+  z-index: -1;
+  /* This ensures the shape stays behind your content */
 }
 
 
 .project-title {
-    margin-top: 7%;
-    text-align: center;
-    font-size: 1.5rem;
+  margin-top: 7%;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .project-title h1 {
-    display: inline;
-    border-bottom: solid rgb(131, 32, 32);
-    border-bottom-width: 8px;
+  display: inline;
+  border-bottom: solid rgb(131, 32, 32);
+  border-bottom-width: 8px;
 }
 
 
 
 .sec2-first-content {
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
 
 }
 
 .project1-intro-text {
-    margin: 100px 35% 0 10%;
+  margin: 100px 35% 0 10%;
 }
 
 .project1-intro-text h1 {
-    color: rgb(24, 16, 16);
-    
+  color: rgb(24, 16, 16);
+
 }
 
 .project1-intro-text h3 {
-    width: 100%;
-    justify-content: center;
-    color: rgb(from color r g b);
+  width: 100%;
+  justify-content: center;
+  color: rgb(from color r g b);
 }
 
 .project1-card {
 
-    margin: 50px 25% 0 35%;
-    width: 400px;
-    border: 1px solid  rgb(255, 247, 236);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.6s ease 0s;
-    cursor: pointer;
-    box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
-  }
+  margin: 50px 25% 0 35%;
+  width: 400px;
+  border: 1px solid rgb(255, 247, 236);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.6s ease 0s;
+  cursor: pointer;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
+}
 
-  .project1-card-image {
-    margin-top: 4%;
-    max-width: 100%;
-    height: auto;
-  }
+.project1-card:hover {
+  transform: translateY(-10px);
+}
 
-  .project1-card-content {
-    padding: 20px;
-  }
+.project1-card-image {
+  margin-top: 4%;
+  max-width: 100%;
+  height: auto;
+}
 
-  .demo-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: rgb(131, 32, 32);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-  }
+.project1-card-content {
+  padding: 20px;
+}
 
-  .skills-list {
-    margin-top: 10px;
-    list-style: none;
-    padding: 0;
-  }
+.demo-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(131, 32, 32);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
 
-  .skills-list li {
-    margin-bottom: 5px;
-    font-size: 12px;
-    color: #888;
-  }
+.skills-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
 
-  .project1-card:hover{
-    transform: translateY(-10px);
-  }
+.skills-list li {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #888;
+}
 
-  /*----------------------------------------------------Project2-------------------------------------------*/
-  .second-content {
-    margin-top: 5%;
-    padding-bottom: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
+
+/*----------------------------------------------------Project2-------------------------------------------*/
+.second-content {
+  margin-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
 
 }
-  .project2-intro-text {
-    margin: 100px 10% 0 35%;
+
+.project2-intro-text {
+  margin: 100px 10% 0 35%;
 }
 
 .project2-intro-text h1 {
-    color: rgb(24, 16, 16);
+  color: rgb(24, 16, 16);
 }
 
 .project2-intro-text h3 {
-    width: 100%;
-    justify-content: center;
-    color: rgb(from color r g b);
+  width: 100%;
+  justify-content: center;
+  color: rgb(from color r g b);
 }
 
 .project2-card {
 
-    margin: 50px 35% 0 10%;
-    width: 400px;
-    border: 1px solid  rgb(255, 247, 236);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.6s ease 0s;
-    cursor: pointer;
-    box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
-  }
+  margin: 50px 35% 0 10%;
+  width: 400px;
+  border: 1px solid rgb(255, 247, 236);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.6s ease 0s;
+  cursor: pointer;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
+}
 
-  .project1-card-image {
-    margin-top: 4%;
-    max-width: 100%;
-    height: auto;
-  }
+.project1-card-image {
+  margin-top: 4%;
+  max-width: 100%;
+  height: auto;
+}
 
-  .project1-card-content {
-    padding: 20px;
-  }
+.project1-card-content {
+  padding: 20px;
+}
 
-  .demo-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: rgb(131, 32, 32);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-  }
+.demo-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(131, 32, 32);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
 
-  .skills-list {
-    margin-top: 10px;
-    list-style: none;
-    padding: 0;
-  }
-
-  
-
-  .skills-list li {
-    margin-bottom: 5px;
-    font-size: 12px;
-    color: #888;
-  }
+.skills-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
 
 
-  .project2-card:hover{
-    transform: translateY(-10px);
-  }
 
-  /*-------------------------------------------Section3 Start---------------------------------*/
-  .section3 {
-    height: 100%;
-    position: relative;
-  
-  }
-  .section3::before{
-    content: "";
+.skills-list li {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+
+.project2-card:hover {
+  transform: translateY(-10px);
+}
+
+/*-------------------------------------------Section3 Start---------------------------------*/
+.section3 {
+  height: 100%;
+  position: relative;
+
+}
+
+.section3::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0; /* Adjusted to position on the right */
-  width: 50%; /* Adjust width as needed */
+  left: 0;
+  /* Adjusted to position on the right */
+  width: 50%;
+  /* Adjust width as needed */
   height: 100%;
-  background: #832020; /* Replace with your desired background color */
+  background: #832020;
+  /* Replace with your desired background color */
   -webkit-clip-path: polygon(0 93%, 0 0, 81% 65%);
-clip-path: polygon(0 93%, 0 0, 81% 65%);
-  z-index: -1; /* This ensures the shape stays behind your content */
-  }
-  
-  .about {
-    padding-top: 5%;
-    
+  clip-path: polygon(0 93%, 0 0, 81% 65%);
+  z-index: -1;
+  /* This ensures the shape stays behind your content */
+}
 
-  }
+.about {
+  padding-top: 5%;
 
-  .about h1{
-    padding-bottom: 5%;
-    color: rgb(131, 32, 32);
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  
-  /* ---------------------------------Style tab links---------------------- */
-  .tab-width{
-    width: 80%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .tablink {
-  background-color:  rgb(255, 247, 236);
+
+}
+
+.about h1 {
+  padding-bottom: 5%;
+  color: rgb(131, 32, 32);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* ---------------------------------Style tab links---------------------- */
+.tab-width {
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tablink {
+  background-color: rgb(255, 247, 236);
   color: rgb(131, 32, 32);
   border: 5px solid rgb(131, 32, 32);
   outline: none;
@@ -358,16 +359,16 @@ clip-path: polygon(0 93%, 0 0, 81% 65%);
 }
 
 .tablink:hover {
-  background-color:rgb(131, 32, 32);
-  color:  rgb(255, 247, 236);
-  border:  5px solid rgb(255, 247, 236);
+  background-color: rgb(131, 32, 32);
+  color: rgb(255, 247, 236);
+  border: 5px solid rgb(255, 247, 236);
 
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  
-  
+
+
   display: none;
   padding: 100px 20px;
   height: 100%;
@@ -385,11 +386,11 @@ clip-path: polygon(0 93%, 0 0, 81% 65%);
   color: rgb(131, 32, 32);
   display: flex;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   /* flex-direction: row; */
   align-items: center;
   justify-content: center;
-  
+
   /* gap:100px; */
 }
 
@@ -405,13 +406,13 @@ clip-path: polygon(0 93%, 0 0, 81% 65%);
 
 .school-name {
   font-size: 20px;
-  font-weight:800;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 .degree {
   font-size: 16px;
-  font-weight:800;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
@@ -422,7 +423,7 @@ clip-path: polygon(0 93%, 0 0, 81% 65%);
 /*My Skills*/
 .skills {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
@@ -448,19 +449,191 @@ clip-path: polygon(0 93%, 0 0, 81% 65%);
 
 @media (max-width:1024px) {
 
+  .section1::before {
+    width: 80%;
+  }
+
+  .my-first-content {
+    padding-top: 10%;
+  }
+
+  .intro-text h1 a {
+    font-size: 1.3rem;
+  }
+
+  .intro-text h3 {
+    font-size: 1rem;
+  }
+
+  .downloadcv-button {
+    padding: 0.1em 0.20em;
+    width: 13em;
+    height: 4.2em;
+    font-size: 9px;
+  }
+
+  .my-image .img1 {
+
+    width: 350px;
+    height: 350px;
+  }
+
+  .project1-card {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .project2-card {
+    margin: auto 10% auto 5%;
+    width: 300px;
+    height: 300px;
+  }
+
+  
+
+  .project1-intro-text {
+    margin:auto 5%;
+} 
+
+.project2-intro-text {
+    margin:auto 15%;
 }
 
+
+
+}
+
+@media (max-width:900px) {}
+
 @media(max-width:768px) {
-    
+  .section1::before {
+    width: 120% !important;
+  }
+
+  .my-first-content {
+    padding-top: 20%;
+  }
+
+  .intro-text {
+    margin: 50px 10% 0 15%;
+  }
+
+  .my-image .img1 {
+
+    width: 250px;
+    height: 250px;
+  }
+
 }
 
 @media (max-width:590px) {
+  .my-first-content {
+    padding-top: 15%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .section1::before {
+    top: 10%;
+    width: 50%;
+    height: 40%;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    z-index: -1;
+  }
+
+  .intro-text {
+    margin: 3% 25% 0 15%;
+  }
+
+  .intro-text h1 a,
+  h3 {
+    color: #fff7ec;
+  }
+
+  .intro-text h3 {
+    font-size: 0.8rem;
+  }
+
+  .my-image {
+    margin-top: 12px;
+    position: relative;
+
+    justify-content: flex-start;
+  }
+  .my-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #980435;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  
+    z-index: -1;
+  }
+
+  .my-image .img1 {
+    margin-left: 10%;
+    clip-path: none;
+    width: 280px;
+    height: 280px;
+  }
 
 }
 
-@media(max-width:480px){
+@media(max-width:480px) {
+
+  .section1::before {
+    top: 5%;
+    width: 50%;
+    height: 40%;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    z-index: -1;
+  }
+
+  .my-image {
+    margin-top: 5%;
+  }
+  .my-image .img1 {
+    margin-left: 5%;
+    clip-path: none;
+    width: 250px;
+    height: 250px;
+  }
   
 }
 
+@media(max-width:400px) {
 
+  .my-image::before{
+    -webkit-clip-path:none;
+   clip-path: none;
+  }
+  .section1::before {
+    top: 5%;
+    width: 50%;
+    height: 45%;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    z-index: -1;
+  }
 
+  .my-image {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .my-image .img1 {
+    margin-left: 0;
+  }
+  
+}
