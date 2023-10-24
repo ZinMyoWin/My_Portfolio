@@ -108,6 +108,7 @@ html {
 
 
 
+
 /*------------------------------Section 2----------------------------------*/
 
 .section2 {
@@ -134,13 +135,13 @@ html {
 }
 
 
-.project-title {
+.project-section-title {
   margin-top: 7%;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.project-title h1 {
+.project-section-title h1 {
   display: inline;
   border-bottom: solid rgb(131, 32, 32);
   border-bottom-width: 8px;
@@ -150,32 +151,17 @@ html {
 
 .sec2-first-content {
   margin-top: 10%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 
-.project1-intro-text {
-  margin: 100px 35% 0 10%;
-}
-
-.project1-intro-text h1 {
-  color: rgb(24, 16, 16);
-
-}
-
-.project1-intro-text h3 {
-  width: 100%;
-  justify-content: center;
-  color: rgb(from color r g b);
-}
 
 .project1-card {
-
-  margin: 50px 25% 0 35%;
+  background-color: rgb(255, 247, 236);
+  margin-top:3%;
   width: 400px;
   border: 1px solid rgb(255, 247, 236);
   border-radius: 8px;
@@ -222,85 +208,17 @@ html {
   color: #888;
 }
 
-
-/*----------------------------------------------------Project2-------------------------------------------*/
-.second-content {
-  margin-top: 5%;
-  padding-bottom: 5%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-
+@media (max-width:850px) {
+  .project1-card{
+    width: 300px;
+  }
 }
 
-.project2-intro-text {
-  margin: 100px 10% 0 35%;
+@media (max-width:330px) {
+  .project1-card{
+    width: 220px;
+  }
 }
-
-.project2-intro-text h1 {
-  color: rgb(24, 16, 16);
-}
-
-.project2-intro-text h3 {
-  width: 100%;
-  justify-content: center;
-  color: rgb(from color r g b);
-}
-
-.project2-card {
-
-  margin: 50px 35% 0 10%;
-  width: 400px;
-  border: 1px solid rgb(255, 247, 236);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.6s ease 0s;
-  cursor: pointer;
-  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
-}
-
-.project1-card-image {
-  margin-top: 4%;
-  max-width: 100%;
-  height: auto;
-}
-
-.project1-card-content {
-  padding: 20px;
-}
-
-.demo-button {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: rgb(131, 32, 32);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.skills-list {
-  margin-top: 10px;
-  list-style: none;
-  padding: 0;
-}
-
-
-
-.skills-list li {
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #888;
-}
-
-
-.project2-card:hover {
-  transform: translateY(-10px);
-}
-
 /*-------------------------------------------Section3 Start---------------------------------*/
 .section3 {
   height: 100%;
@@ -477,30 +395,6 @@ html {
     width: 350px;
     height: 350px;
   }
-
-  .project1-card {
-    margin: auto;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .project2-card {
-    margin: auto 10% auto 5%;
-    width: 300px;
-    height: 300px;
-  }
-
-  
-
-  .project1-intro-text {
-    margin:auto 5%;
-} 
-
-.project2-intro-text {
-    margin:auto 15%;
-}
-
-
 
 }
 

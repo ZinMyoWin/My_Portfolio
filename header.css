@@ -170,14 +170,18 @@
           gap: 0;
           flex-direction: column;
           background-color: rgb(131, 32, 32);
-          width: 100%;
-          text-align: center;
+          border-right: #000000;
+          border-right-style: solid;
+         
+          width: 30%;
           transition: 0.3s;
 
       }
 
+      
+
       .navbar-items {
-          margin: 16px 0;
+       margin: 70px 0;
       }
       .navbar-items a {
         color: #fff7ec;
