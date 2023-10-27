@@ -1,0 +1,58 @@
+:root {
+    --radial-progress-bar-size: 8rem;
+    --radial-progress-bar-border-width: 0.75rem;
+}
+
+.radial-progress-bar {
+    position: relative;
+    height: var(--radial-progress-bar-size);
+    width: var(--radial-progress-bar-size);
+}
+
+.radial-progress-bar__percentages {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Rounded border */
+    border: var(--radial-progress-bar-border-width) solid #d1d5db;
+    border-radius: 50%;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+}
+
+.radial-progress-bar__curve {
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip: rect(auto, auto, auto, auto);
+}
+
+.radial-progress-bar__half {
+    /* Take full size */
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    /* Background color of curve. The border width should be the same as the area showing the percentages */
+    border: var(--radial-progress-bar-border-width) solid #3b82f6;
+    border-radius: 50%;
+}
+
+.radial-progress-bar__half--first {
+    /* Position */
+    clip: rect(0px, var(--radial-progress-bar-size), var(--radial-progress-bar-size), calc(var(--radial-progress-bar-size) / 2));
+    transform: rotate(0deg);
+}
+
+.radial-progress-bar__half--second {
+    /* Position */
+    clip: rect(0px, var(--radial-progress-bar-size), var(--radial-progress-bar-size), calc(var(--radial-progress-bar-size) / 2));
+    transform: rotate(180deg);
+}

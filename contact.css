@@ -1,8 +1,8 @@
 .contact-container {
     max-width: 1200px;
     color: #fff7ec;
-    margin: 7rem auto;
-    margin-bottom: 2rem;
+    margin: 4rem auto;
+    margin-bottom: 5rem;
     padding: 2rem;
     background-color: #832020;
     border: 1px solid #dee2e6;
@@ -17,21 +17,27 @@
 
 .contact-col {
     flex: 1;
-    min-width: 50%;
+    min-width: 30%;
     padding: 2rem;
     
 }
 
 .contact-col img.contact-connect {
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 100%;
 }
 
 .contact-icon a i{
     text-decoration: none;
    font-size: 40px;
-   color: #0077b5;
-    
+  padding-right: 2%;    
+}
+
+.linkedIn-icon,.facebook-icon{
+    color: #0077b5;
+}
+.gitHub-icon{
+    color: #0b0b0b;
 }
 .intro-section {
     border-radius: 20px;

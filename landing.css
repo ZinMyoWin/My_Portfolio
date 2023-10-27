@@ -103,7 +103,19 @@ html {
   width: 400px;
   height: 400px;
   clip-path: circle(50% at 50% 50%);
+  animation: bounce 4s infinite;
 }
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start and end position */
+  }
+  50% {
+      transform: translateY(-20px); /* Peak position (adjust as needed) */
+  }
+}
+
+
 
 
 
@@ -113,7 +125,7 @@ html {
 
 .section2 {
   height: 100%;
-  color: rgb(131, 32, 32);
+  color: rgb(28, 12, 6);
   position: relative;
 }
 
@@ -123,7 +135,7 @@ html {
   top: 0;
   right: 0;
   /* Adjusted to position on the right */
-  width: 50%;
+  width: 90%;
   /* Adjust width as needed */
   height: 100%;
   background: #832020;
@@ -136,12 +148,14 @@ html {
 
 
 .project-section-title {
+  opacity: 0;
   margin-top: 7%;
   text-align: center;
   font-size: 1.5rem;
 }
 
 .project-section-title h1 {
+  color: #832020;
   display: inline;
   border-bottom: solid rgb(131, 32, 32);
   border-bottom-width: 8px;
@@ -150,43 +164,70 @@ html {
 
 
 .sec2-first-content {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  
 
 }
 
-
+.sec2-first-content .card1,.sec2-first-content .card2, .sec2-first-content .card3, .sec2-first-content .card4{
+  opacity: 0;
+}
 .project1-card {
   background-color: rgb(255, 247, 236);
-  margin-top:3%;
-  width: 400px;
+  margin-top: 3%;
+  width: 570px;
+  height: fit-content;
   border: 1px solid rgb(255, 247, 236);
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.6s ease 0s;
+  transition: background-color 0.8s ease 0.1s, transform 0.5s ease 0s;
   cursor: pointer;
   box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 .project1-card:hover {
   transform: translateY(-10px);
+  box-shadow: 4px 4px 20px 3px rgba(0, 0, 0, 0.2);
+  background-color: #832020;
+  color: #f3eeee;
+}
+
+.project1-card:hover .skills-list {
+  color: #ffffff;
+  display: none;
+}
+
+.project1-card:hover .demo-button {
+  background-color: #0c0c0c;
+  display: inline-block;
+}
+
+.project1-card:hover .project1-card-content p {
+  display: block;
 }
 
 .project1-card-image {
-  margin-top: 4%;
+  margin-top: 2%;
   max-width: 100%;
   height: auto;
 }
 
 .project1-card-content {
   padding: 20px;
+  word-break: break-word;
+}
+
+.project1-card-content p{
+  display: none;
 }
 
 .demo-button {
-  display: inline-block;
+  display: none;
   padding: 8px 16px;
   background-color: rgb(131, 32, 32);
   color: #fff;
@@ -200,13 +241,18 @@ html {
   margin-top: 10px;
   list-style: none;
   padding: 0;
+  font-weight: 700;
+  color: #832020;
+  
 }
 
 .skills-list li {
+  
   margin-bottom: 5px;
   font-size: 12px;
-  color: #888;
 }
+
+
 
 @media (max-width:850px) {
   .project1-card{
@@ -249,12 +295,20 @@ html {
 
 }
 
-.about h1 {
+.about-title, .edu-title , .contact-title {
   padding-bottom: 5%;
   color: rgb(131, 32, 32);
   font-size: 1.5rem;
   text-align: center;
 }
+
+.about-title h1, .edu-title h1, .contact-title h1 {
+  display: inline;
+  border-bottom: solid rgb(131, 32, 32);
+  border-bottom-width: 8px;
+}
+
+
 
 /* ---------------------------------Style tab links---------------------- */
 .tab-width {
