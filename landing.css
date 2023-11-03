@@ -1,6 +1,7 @@
 html {
   background-color: rgb(255, 247, 236);
   scroll-behavior: smooth;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /*---------------------Section 1----------------------*/
@@ -296,6 +297,7 @@ html {
 }
 
 .about-title, .edu-title , .contact-title {
+  opacity: 0;
   padding-bottom: 5%;
   color: rgb(131, 32, 32);
   font-size: 1.5rem;
@@ -367,6 +369,7 @@ html {
 }
 
 .edu-card {
+  opacity: 0;
   margin: 5%;
   background-color: rgb(255, 247, 236);
   padding: 20px;

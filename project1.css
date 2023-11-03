@@ -1,0 +1,281 @@
+body{
+  background-color: rgb(255, 247, 236);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #972626;
+    color: #ffffff;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #faabab, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+   .project-img img {
+    width: 75%;
+    border-radius: 10px;
+    border: 5px solid #972626;
+}
+
+.project-intro {
+    font-size: 1.4vw;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.cards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 5%;
+}
+.card{
+    box-sizing: border-box;
+    width:260px;
+    height: 350px;
+    margin-top: 10px;
+    border: 1px solid white;
+    /* box-shadow: 8px 10px 60px rgba(0, 0, 0, 0.22); */
+    -webkit-box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
+box-shadow: 0px 0px 2px -1px rgba(66, 68, 90, 1);
+
+    backdrop-filter: blur(6px);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  .card .card-title{
+    font-size: 20px;
+    margin-top:30%;
+    color: #972626;
+  }
+  
+  .card:hover {
+    /* border: 1px solid black; */
+    transform: scale(1.05);
+    background-color: #972626;
+    color: #ffffff;
+  }
+
+  .card:hover .card-title{
+    color: #ffffff;
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .features {
+    display: flex;
+    margin: 0 auto;
+    /* height: 70vh; */
+  }
+  
+  .features1 {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .feature-Imgs{
+    width:200%;
+  }
+  .features1-img {
+    width: 100%;
+    border-radius: 7px;
+    border: 3px solid #972626;
+  }
+  
+  .features2-img {
+    width: 100%;
+    border-radius: 7px;
+  }
+  
+.features-right{
+    border-left: 1px solid rgb(202, 52, 52);
+    padding-left: 20px;
+    margin-left: 25px;
+    height:fit-content;
+}
+
+  .features1-title {
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(202, 52, 52);
+  }
+  
+  .features1-title p {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+  }
+
+  .features1-des{
+    border-bottom: 1px solid rgb(202, 52, 52);
+    
+  }
+
+  .features1-des p{
+    font-size: 1.2vw;
+  }
+
+ .features2-title{
+    margin-top: 50%;
+    
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(202, 52, 52);
+ }
+
+ .features2-title p {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+  }
+  
+
+  /*------------------------------------------Media---------------------------------------------------*/
+
+  @media (min-width:1100px) {
+    .project-img img{
+      height: 80vh;
+    }
+  }
+
+  @media (max-width:1100px) {
+
+    .project-img img {
+      width: 90%;
+  }
+  
+  .project-intro {
+      font-size: 2vw;
+      width: 80%;
+     
+  }
+
+
+    .features1{
+      flex-direction: column-reverse;
+    }
+
+    .feature-Imgs{
+      margin-top: 1%;
+      width:100%;
+    }
+
+    .features-right{
+      border-left: 1px solid rgb(202, 52, 52);
+      padding-left: 20px;
+      margin-left: 0;
+      height:fit-content;
+  }
+
+
+  .features1-title {
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(202, 52, 52);
+  }
+
+  .features1-title p {
+       font-size: 3vw;
+  }
+
+  .features1-des p{
+    font-size:2vw;
+    margin-bottom: 5px;
+  }
+
+
+  }
+
+  @media (max-width:500px) {
+    .card{
+      height: 260px;
+    }
+
+    .card .card-title{
+      font-size: 15px;
+      margin-top:10%;
+    }
+    .card-description{
+      font-size: 12px;
+    }
+
+    button {
+      
+      height: 2em;
+      width: 70px;
+      align-items: center;
+      justify-content: center;
+      background-color: #eeeeee4b;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      border: none;
+      background: #972626;
+      color: #ffffff;
+     }
+     
+
+    .project-intro {
+      font-size: 3vw;
+     
+  }
+
+    .features1-title {
+      height: 30px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgb(202, 52, 52);
+    }
+  
+    .features1-title p {
+         font-size: 4vw;
+    }
+  
+    .features1-des p{
+      font-size:3vw;
+      margin-bottom: 5px;
+    }
+  
+  
+    }
+  
+

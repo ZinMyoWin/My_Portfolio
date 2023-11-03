@@ -1,12 +1,7 @@
-  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400&family=Open+Sans&display=swap');
-
-
   body {
       top: 0;
       padding: 0;
       margin: 0;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-family: 'Open Sans', sans-serif;
   }
 
   .nav-container {
@@ -82,17 +77,30 @@
   .hire-me-button a {
       text-decoration: none;
       background-color: #980435;
-      padding: 10px;
+      /* padding: 10px;
       color: aliceblue;
       border-radius: 5px;
       box-shadow: 2px 8px 10px -2px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 2px 8px 10px -2px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 2px 8px 10px -2px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 2px 8px 10px -2px rgba(0, 0, 0, 0.5); */
+      
+      color: #FAFAFA;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid #563737;
+      background: #aa2727;
+      box-shadow: 3px 3px #563737;
+      cursor: pointer;
+      margin: 35px 0;
   }
 
-  .hire-me-button a:hover {
-      background-color: #cb0000;
+  .hire-me-button a:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
   }
+
+ 
 
 
   .hamburger-menu {
