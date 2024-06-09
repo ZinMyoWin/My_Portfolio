@@ -8,6 +8,9 @@
     background-color: #832020;
     border: 1px solid #dee2e6;
     border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 18px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 18px -8px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 18px -8px rgba(0,0,0,0.75);
 }
 
 .flex-row {
