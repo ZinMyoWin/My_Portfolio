@@ -16,7 +16,9 @@ body {
   top: 0;
   padding: 0 5%;
   height: 70px;
-  background-color: rgb(255, 247, 236);
+  width: 90vw;
+  /* background-color: rgb(255, 247, 236); */
+  /* background-color: rgb(109, 75, 27); */
   display: flex;
   justify-content: space-between;
   align-items: center;
