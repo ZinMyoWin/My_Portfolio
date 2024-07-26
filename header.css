@@ -2,6 +2,7 @@ body {
   top: 0;
   padding: 0;
   margin: 0;
+  /*Chaged the svg to base64 code here for the cursor*/
   cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNBRDEwMTAiIGZpbGwtb3BhY2l0eT0iMC43OSIvPgo8L3N2Zz4K"),
     auto;
 }
