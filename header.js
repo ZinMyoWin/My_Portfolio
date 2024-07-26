@@ -1,5 +1,7 @@
 const hamberger = document.querySelector(".hamburger-menu");
 const navContents = document.querySelector(".nav-contents");
+const navContainer = document.querySelector(".nav-container");
+const navLinks = document.querySelectorAll(".navbar-links");
 
 hamberger.addEventListener("click", () => {
   hamberger.classList.toggle("active");
@@ -116,3 +118,19 @@ function openPage(pageName, elmnt, backgroundColor, color, border) {
 document.getElementById("defaultOpen").click();
 
 //---------------------------Tabs Js End----------------------
+
+//change the background color of nav bar when scroll
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navContainer.classList.add("active");
+    navLinks.forEach((link) => {
+      link.style.color = "#fafafa";
+    });
+  } else {
+    navContainer.classList.remove("active");
+    navLinks.forEach((link) => {
+      link.style.color = ""; // Reset to default color
+    });
+  }
+});
