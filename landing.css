@@ -146,7 +146,6 @@ html {
 }
 
 .project-section-title {
-  opacity: 0;
   margin-top: 7%;
   text-align: center;
   font-size: 1.5rem;
@@ -156,7 +155,7 @@ html {
   color: #832020;
   display: inline;
   border-bottom: solid rgb(131, 32, 32);
-  border-bottom-width: 8px;
+  border-bottom-width: 3px;
 }
 
 .sec2-first-content {
@@ -281,8 +280,8 @@ iframe {
 
 .about-title,
 .edu-title,
-.contact-title {
-  opacity: 0;
+.contact-title,
+.exp-header {
   padding-bottom: 5%;
   color: rgb(131, 32, 32);
   font-size: 1.5rem;
@@ -291,10 +290,11 @@ iframe {
 
 .about-title h1,
 .edu-title h1,
-.contact-title h1 {
+.contact-title h1,
+.exp-header h1 {
   display: inline;
   border-bottom: solid rgb(131, 32, 32);
-  border-bottom-width: 8px;
+  border-bottom-width: 3px;
 }
 
 /* ---------------------------------Style tab links---------------------- */
@@ -415,6 +415,57 @@ iframe {
   margin-top: 8px;
   position: absolute;
   font-weight: bold;
+}
+
+#exp {
+  margin-bottom: 10%;
+}
+
+.exp-container {
+  width: 80%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experiences {
+  width: 80%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.exp {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.exp-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* .exp-timeline .h3{
+  margin-top: 0;
+  margin-bottom: 0;
+
+} */
+.exp-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exp {
+  border-bottom: #980435 2px solid;
+}
+
+.company h2,
+.exp-position h3 {
+  margin: 0;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++*/

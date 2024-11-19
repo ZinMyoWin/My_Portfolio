@@ -13,7 +13,6 @@ body {
   z-index: 2;
   top: 0;
   width: 90vw;
-
   left: 50%; /* Position at the center of the viewport */
   transform: translateX(-50%); /* Adjust by half its width */
   height: 70px;
@@ -23,12 +22,15 @@ body {
   /* justify-content: space-between; */
   align-items: space-between;
   transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  justify-content: center;
 }
 .nav-container.active {
   top: 10px !important;
   background-color: #980435;
   width: 70vw;
   border-radius: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-logo {
@@ -121,11 +123,17 @@ body {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1126px) {
   .nav-container {
     padding: 0%;
   }
 
+  .nav-container.active {
+    top: 5px !important;
+    background-color: #980435;
+    width: 90vw;
+    border-radius: 30px;
+  }
   .nav-logo {
     justify-content: flex-start;
     /* Default value */
@@ -170,13 +178,10 @@ body {
   .nav-contents {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 90px;
     gap: 0;
     flex-direction: column;
     background-color: rgb(131, 32, 32);
-    border-right: #000000;
-    border-right-style: solid;
-
     width: 30%;
     transition: 0.3s;
   }
@@ -192,7 +197,7 @@ body {
   }
 
   .hire-me-button {
-    justify-content: flex-start !important;
+    display: none;
   }
 }
 
